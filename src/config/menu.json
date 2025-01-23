@@ -9,11 +9,11 @@
       "url": "/blog"
     },
     {
-      "name": "Pricing",
+      "name": "Products",
       "url": "/pricing"
     },
     {
-      "name": "Contact",
+      "name": "Connect",
       "url": "/contact"
     },
     {
@@ -27,14 +27,14 @@
   ],
   "footer": [
     {
-      "name": "Company",
+      "name": "Develop",
       "menu": [
         {
-          "text": "Pricing",
+          "text": "Islamic apps",
           "url": "/pricing"
         },
         {
-          "text": "Quick Start",
+          "text": "Websites",
           "url": "#"
         }
       ]

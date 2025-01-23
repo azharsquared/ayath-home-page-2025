@@ -1,7 +1,7 @@
 ---
 banner:
-  title: Let us solve your critical website development challenges
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus
+  title: Everything islamic
+  content: Discover a wide range of Islamic content, apps, and resources to enrich your spiritual journey.
   image: /images/banner-art.png
   button:
     enable: true
@@ -10,30 +10,50 @@ banner:
 
 # feature
 feature:
-  title: Something You Need To Know
+  title: What we serve
   features:
-    - name: "Clean Code"
+    - name: "Apps and blogs"
       icon: "/images/code.svg"
       content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-    - name: "Object Oriented"
+    - name: "Store"
       icon: "/images/oop.svg"
       content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-    - name: "24h Service"
+    - name: "Community"
       icon: "/images/user-clock.svg"
       content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-    - name: "Value for Money"
+    - name: "Social"
       icon: "/images/love.svg"
       content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-    - name: "Faster Response"
+    - name: "Podcasts"
       icon: "/images/speedometer.svg"
       content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-    - name: "Cloud Support"
+    - name: "Talks"
       icon: "/images/cloud.svg"
       content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
 
 # services
 services:
-  - title: "It is the most advanced digital marketing and it company."
+  - title: "What is islam?"
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+    images:
+      - "/images/service-slide-1.png"
+      - "/images/service-slide-2.png"
+      - "/images/service-slide-3.png"
+    button:
+      enable: true
+      label: Learn more
+      link: /blog/blog-4
+
+  - title: "How are we helping people?"
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+    images:
+      - "/images/service-slide-1.png"
+    button:
+      enable: true
+      label: Check it out
+      link: /contact
+
+  - title: "How can you help?"
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
     images:
       - "/images/service-slide-1.png"
@@ -44,27 +64,7 @@ services:
       label: Check it out
       link: /contact
 
-  - title: "It is a privately owned Information and cyber security company"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-    images:
-      - "/images/service-slide-1.png"
-    button:
-      enable: true
-      label: Check it out
-      link: /contact
-
-  - title: "It’s a team of experienced and skilled people with distributions"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-    images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
-    button:
-      enable: true
-      label: Check it out
-      link: /contact
-
-  - title: "A company standing different from others"
+  - title: "Free Quran program"
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
     images:
       - "/images/service-slide-1.png"
@@ -77,7 +77,7 @@ services:
 
 # workflow
 workflow:
-  title: "Experience the best workflow with us"
+  title: ""
   image: "/images/banner.png"
   description: ""
 

@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Bigspring Light Astro",
-    "base_url": "https://bigspring-light-astro.vercel.app",
+    "title": "Ayath",
+    "base_url": "https://www.ayath.org",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
@@ -17,7 +17,7 @@
   },
 
   "nav_button": {
-    "enable": true,
+    "enable": false,
     "label": "Get Started",
     "link": "/contact"
   },
@@ -25,13 +25,13 @@
   "params": {
     "contact_form_action": "",
     "tag_manager_id": "",
-    "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur.",
-    "copyright": "Designed and Developed By [Themefisher](https://themefisher.com/)"
+    "footer_content": "Every thing islamic.",
+    "copyright": ""
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "Ayath",
     "meta_image": "/images/og-image.png",
-    "meta_description": "astro boilerplate"
+    "meta_description": "Every thing islamic."
   }
 }
