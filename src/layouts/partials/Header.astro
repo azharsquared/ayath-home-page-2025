@@ -74,7 +74,7 @@ const { main }: { main: NavigationLink[] } = menu;
                       <a
                         href={child.url}
                         class={`nav-dropdown-link block ${
-                          pathname === child.url && "nav-link-active"
+                          true && "nav-link-active"
                         }`}
                       >
                         {child.name}
@@ -88,7 +88,7 @@ const { main }: { main: NavigationLink[] } = menu;
                 <a
                   href={menu.url}
                   class={`nav-link block ${
-                    pathname === menu.url && "nav-link-active"
+                    true && "nav-link-active"
                   }`}
                 >
                   {menu.name}
