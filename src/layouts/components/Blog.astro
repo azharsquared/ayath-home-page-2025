@@ -4,6 +4,7 @@ import dateFormat from "@/lib/utils/dateFormat";
 import readingTime from "@/lib/utils/readingTime";
 import { humanize, plainify, slugify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
+import { Debug } from "astro:components";
 import type { CollectionEntry } from "astro:content";
 const { summary_length } = config.settings;
 
@@ -12,6 +13,8 @@ type Props = {
 };
 const { posts } = Astro.props;
 ---
+
+<!-- <Debug category={posts} /> -->
 
 <div class="row">
   {

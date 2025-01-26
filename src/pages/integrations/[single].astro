@@ -5,6 +5,7 @@ import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { humanize, markdownify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
+import { Debug } from "astro:components";
 import type { CollectionEntry } from "astro:content";
 import { getEntry, render } from "astro:content";
 const integrationsIndex = (await getEntry(
@@ -32,13 +33,15 @@ const page_data = {
 };
 ---
 
+<!-- <Debug answer={page_data} /> -->
+
 <Base
   title={post.data.title}
   meta_title={post.data.meta_title}
   description={post.data.description}
   image={post.data.image}
 >
-  <Shape />
+  <!-- <Shape /> -->
   <section class="page-hero pb-8 pt-16">
     <div class="container">
       <div class="page-hero-content mx-auto max-w-[883px] text-center">

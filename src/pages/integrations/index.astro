@@ -6,6 +6,7 @@ import IntegrateMedia from "@/layouts/function-components/IntegrateMedia";
 import Cta from "@/layouts/partials/Cta.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { getTaxonomy } from "@/lib/taxonomyParser.astro";
+import { Debug } from "astro:components";
 import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
 const integrationsIndex = (await getEntry(
@@ -19,14 +20,14 @@ const page_data = {
   content: integrationsIndex.body,
 };
 ---
-
+<!-- <Debug answer={categories} /> -->
 <Base
   title={integrationsIndex.data.title}
   meta_title={integrationsIndex.data.meta_title}
   description={integrationsIndex.data.description}
   image={integrationsIndex.data.image}
 >
-  <Shape />
+  <!-- <Shape /> -->
   <section class="page-hero pb-14 pt-16">
     <div class="container">
       <PageHeader page_data={page_data} />

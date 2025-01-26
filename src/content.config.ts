@@ -19,6 +19,59 @@ const homepageCollection = defineCollection({
           .optional(),
       })
       .optional(),
+      key_features: z.object({
+        title: z.string(),
+        description: z.string(),
+        feature_list: z
+          .array(
+            z.object({
+              icon: z.string(),
+              title: z.string(),
+              content: z.string(),
+            }),
+          )
+          .optional(),
+      }),
+
+      service: z.object({
+        homepage_tab: z.object({
+          title: z.string(),
+          description: z.string(),
+          tab_list: z
+            .array(
+              z.object({
+                title: z.string(),
+                icon: z.string(),
+                image: z.string(),
+              }),
+            )
+            .optional(),
+        }),
+  
+        our_service: z.array(
+          z.object({
+            title: z.string(),
+            description: z.string().optional(),
+            image: z.string().optional(),
+            list: z.array(z.string()).optional(),
+            video: z
+              .object({
+                thumbnail: z.string(),
+                video_id: z.string(),
+              })
+              .optional(),
+            button: z
+              .object({
+                label: z.string(),
+                link: z.string(),
+                enable: z.boolean().default(true),
+              })
+              .optional(),
+          }),
+        ),
+      }),
+  
+
     feature: z.object({
       title: z.string(),
       features: z.array(
@@ -66,6 +119,21 @@ const homepageCollection = defineCollection({
           .optional(),
       })
       .optional(),
+      testimonial: z.object({
+        title: z.string(),
+        description: z.string(),
+        testimonial_list: z
+          .array(
+            z.object({
+              author: z.string(),
+              avatar: z.string(),
+              organization: z.string(),
+              rating: z.enum(["one", "two", "three", "four", "five"]),
+              content: z.string(),
+            }),
+          )
+          .optional(),
+      }),
   }),
 });
 
@@ -157,6 +225,22 @@ const blogCollection = defineCollection({
   }),
 });
 
+// News collection schema
+const newsCollection = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/news" }),
+  schema: z.object({
+    title: z.string(),
+    meta_title: z.string().optional(),
+    description: z.string().optional(),
+    date: z.date().optional(),
+    image: z.string().optional(),
+    authors: z.array(z.string()).default(["admin"]),
+    categories: z.array(z.string()).default(["others"]),
+    tags: z.array(z.string()).default(["others"]),
+    draft: z.boolean().optional(),
+  }),
+});
+
 // Pages collection schema
 const pagesCollection = defineCollection({
   schema: z.object({
@@ -169,15 +253,7 @@ const pagesCollection = defineCollection({
   }),
 });
 
-// Export collections
-export const collections = {
-  homepage: homepageCollection,
-  blog: blogCollection,
-  pages: pagesCollection,
-  contact: contactCollection,
-  pricing: pricingCollection,
-  faq: faqCollection,
-};
+
 
 // About Collection Schema
 const aboutCollection = defineCollection({
@@ -417,3 +493,18 @@ const integrationsCollection = defineCollection({
     draft: z.boolean().default(false).optional(),
   }),
 });
+
+// Export collections
+export const collections = {
+  homepage: homepageCollection,
+  blog: blogCollection,
+  pages: pagesCollection,
+  contact: contactCollection,
+  pricing: pricingCollection,
+  faq: faqCollection,
+  features: featuresCollection,
+  "how-it-works": howItWorksCollection,
+  careers: careersCollection,
+  integrations: integrationsCollection,
+  news: newsCollection,
+};

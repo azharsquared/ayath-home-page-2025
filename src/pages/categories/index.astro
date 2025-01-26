@@ -4,15 +4,17 @@ import PageHeader from "@/components/PageHeader.astro";
 import Shape from "@/components/Shape.astro";
 import BlogCategories from "@/components/blog/BlogCategories.astro";
 import Base from "@/layouts/Base.astro";
+
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { getTaxonomy } from "@/lib/taxonomyParser.astro";
+import { Debug } from "astro:components";
 
 const posts = await getSinglePage("blog");
 const categories = await getTaxonomy("blog", "categories");
 ---
-
+<!-- <Debug category={posts} item={categories} /> -->
 <Base title={"categories"}>
-  <Shape />
+  <!-- <Shape /> -->
   <section class="page-hero pb-14 pt-16">
     <div class="container">
       <PageHeader page_data={{ title: "Categories" }} />

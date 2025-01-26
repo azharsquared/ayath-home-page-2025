@@ -8,6 +8,7 @@ import { getSinglePage } from "@/lib/contentParser.astro";
 import { getTaxonomy } from "@/lib/taxonomyParser.astro";
 import taxonomyFilter from "@/lib/utils/taxonomyFilter";
 import { humanize, slugify } from "@/lib/utils/textConverter";
+import { Debug } from "astro:components";
 
 const categories = await getTaxonomy("blog", "categories");
 export async function getStaticPaths() {
@@ -33,9 +34,10 @@ const page_data = {
   slug: item,
 };
 ---
+<!-- <Debug category={category} item={item} /> -->
 
 <Base title={category as string}>
-  <Shape />
+  <!-- <Shape /> -->
   <section class="page-hero pb-8 pt-16">
     <div class="container">
       <div class="page-hero-content mx-auto max-w-[883px] text-center">

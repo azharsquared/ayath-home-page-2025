@@ -1,10 +1,14 @@
 ---
 import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
+import { Debug } from "astro:components";
 const { page_data } = Astro.props || {};
 const { title, index_title, page_title, slug, content } = page_data || {};
 ---
 
-<div class="text-center">
+<!-- <Debug answer={page_data} /> -->
+<!-- TODO something is not : disabled due to unused component -->
+
+<!-- <div class="text-center">
   <ul
     class="breadcrumb inline-flex h-8 items-center justify-center space-x-2 rounded-3xl bg-theme-light px-4 py-2"
   >
@@ -47,7 +51,8 @@ const { title, index_title, page_title, slug, content } = page_data || {};
       page_data?.page_title ? page_data?.page_title : page_data?.title
     )}
   />
-  <p set:html={markdownify(content)} />
+  //this is causing issues
+   <p set:html={markdownify(content)} /> 
 
   {
     page_data.buttons && (
@@ -68,4 +73,4 @@ const { title, index_title, page_title, slug, content } = page_data || {};
       </div>
     )
   }
-</div>
+</div> -->
