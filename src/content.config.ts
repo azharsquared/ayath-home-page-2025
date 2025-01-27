@@ -222,6 +222,7 @@ const blogCollection = defineCollection({
     categories: z.array(z.string()).default(["others"]),
     tags: z.array(z.string()).default(["others"]),
     draft: z.boolean().optional(),
+    post_type: z.string().default("blog"),
   }),
 });
 
@@ -238,6 +239,7 @@ const newsCollection = defineCollection({
     categories: z.array(z.string()).default(["others"]),
     tags: z.array(z.string()).default(["others"]),
     draft: z.boolean().optional(),
+    post_type: z.string().default("news"),
   }),
 });
 
@@ -494,6 +496,50 @@ const integrationsCollection = defineCollection({
   }),
 });
 
+//Apps collections
+const appsCollection = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/specials/apps" }),
+  schema: z.object({
+    title: z.string(),
+    meta_title: z.string().optional(),
+    description: z.string().optional(),
+    page_title: z.string().optional(),
+    name: z.string().optional(),
+    excerpt: z.string().optional(),
+    image: z.string().optional(),
+    categories: z.array(z.string()).default(["social media"]).optional(),
+    button: z
+      .object({
+        label: z.string(),
+        link: z.string(),
+      })
+      .optional(),
+    draft: z.boolean().default(false).optional(),
+  }),
+});
+
+//Websitesd collections
+const websitesCollection = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/specials/websites" }),
+  schema: z.object({
+    title: z.string(),
+    meta_title: z.string().optional(),
+    description: z.string().optional(),
+    page_title: z.string().optional(),
+    name: z.string().optional(),
+    excerpt: z.string().optional(),
+    image: z.string().optional(),
+    categories: z.array(z.string()).default(["social media"]).optional(),
+    button: z
+      .object({
+        label: z.string(),
+        link: z.string(),
+      })
+      .optional(),
+    draft: z.boolean().default(false).optional(),
+  }),
+});
+
 // Export collections
 export const collections = {
   homepage: homepageCollection,
@@ -507,4 +553,6 @@ export const collections = {
   careers: careersCollection,
   integrations: integrationsCollection,
   news: newsCollection,
+  apps: appsCollection,
+  websites: websitesCollection,
 };

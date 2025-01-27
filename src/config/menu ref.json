@@ -1,0 +1,162 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog"
+    },
+    {
+      "name": "Products",
+      "url": "/pricing"
+    },
+    {
+      "name": "Connect",
+      "url": "/contact"
+    },
+    {
+      "name": "FAQ",
+      "url": "/faq"
+    },
+    {
+      "name": "Elements",
+      "url": "/elements"
+    },
+    {
+      "name": "Pages",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "careers",
+          "url": "/careers"
+        },
+
+        {
+          "name": "Integrations",
+          "url": "/integrations"
+        },
+
+        {
+          "name": "Pricing",
+          "url": "/pricing"
+        },
+        {
+          "name": "Sign In",
+          "url": "/signin"
+        },
+
+        {
+          "name": "Elements",
+          "url": "/elements"
+        },
+        {
+          "name": "Changelog",
+          "url": "/changelog"
+        },
+        {
+          "name": "Terms And Conditions",
+          "url": "/terms-and-conditions"
+        }
+      ]
+    },
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "News",
+      "url": "/news"
+    },
+    {
+      "name": "Features",
+      "url": "/features"
+    },
+    {
+      "name": "How It Works",
+      "url": "/how-it-works"
+    },
+    {
+      "name": "Careers",
+      "url": "/careers"
+    },
+
+    {
+      "name": "Integrations",
+      "url": "/integrations"
+    },
+
+    {
+      "name": "Pricing",
+      "url": "/pricing"
+    },
+    {
+      "name": "Sign In",
+      "url": "/signin"
+    },
+
+    {
+      "name": "Elements",
+      "url": "/elements"
+    },
+    {
+      "name": "Changelog",
+      "url": "/changelog"
+    },
+    {
+      "name": "Terms And Conditions",
+      "url": "/terms-and-conditions"
+    }
+  ],
+  "footer": [
+    {
+      "name": "Develop",
+      "menu": [
+        {
+          "text": "Islamic apps",
+          "url": "/pricing"
+        },
+        {
+          "text": "Websites",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "name": "Product",
+      "menu": [
+        {
+          "text": "Features",
+          "url": "#"
+        },
+        {
+          "text": "Platform",
+          "url": "#"
+        },
+        {
+          "text": "Pricing",
+          "url": "/pricing"
+        }
+      ]
+    },
+    {
+      "name": "Support",
+      "menu": [
+        {
+          "text": "FAQ",
+          "url": "/faq"
+        },
+        {
+          "text": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "text": "Terms & Conditions",
+          "url": "/terms-conditions"
+        }
+      ]
+    }
+  ]
+}

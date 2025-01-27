@@ -4,6 +4,7 @@ description: "Heading example Here is example of hedings. You can use this headi
 image: "/images/blog-1.jpg"
 date: 2022-04-04T05:00:00Z
 draft: false
+post_type: "news"
 ---
 
 Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
