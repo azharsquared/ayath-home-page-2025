@@ -1,6 +1,7 @@
 ---
 import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
+import { Debug } from "astro:components";
 import { render } from "astro:content";
 
 const { post } = Astro.props;
@@ -67,4 +68,35 @@ const { title, image , post_type } = post.data;
   </div>
     )
   }
+<!-- <Debug  answer={post}/> -->
+
+{
+  
+  post_type == "printables" && (
+    <div class="container">
+      <div class="row justify-center">
+        <div class="col-12 md:col-8">
+          <article class="text-center">
+            {
+              image && (
+                <Image
+                  src={image}
+                  height={500}
+                  width={1000}
+                  alt={title}
+                  class="rounded-lg"
+                />
+              )
+            }
+            <h1 set:html={markdownify(title)} class="h2 text-left my-6" />
+
+            <div class="content mb-16 text-left">
+              <Content />
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  )
+}
 </section>

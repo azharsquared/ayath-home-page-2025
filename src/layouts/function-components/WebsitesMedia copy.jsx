@@ -46,7 +46,7 @@ const WebsitesMedia = ({ integrations, categories }) => {
             >
               <div className="rounded-xl bg-white px-10 pb-8 pt-11 shadow-lg">
                 <div className="integration-card-head flex items-center space-x-4">
-                  <img className="w-16 h-16 object-cover rounded" src={item.data.image} alt="" />
+                  <img src={item.data.image} alt="" />
                   <div>
                     <h4 className="h4">{humanize(item.data.name)}</h4>
                     {item.data.categories.map((category, i) => (
@@ -68,7 +68,7 @@ const WebsitesMedia = ({ integrations, categories }) => {
 
                 <a
                   className="group inline-flex items-center font-semibold text-dark hover:text-primary"
-                  href={`/websites/${item.id}`}
+                  href={`/apps/${item.id}`}
                 >
                   View integration
                   <AiOutlineArrowRight className="ml-1.5 text-xl font-bold duration-300 group-hover:ml-3" />

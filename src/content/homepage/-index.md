@@ -14,66 +14,64 @@ feature:
   features:
     - name: "Apps and blogs"
       icon: "/images/code.svg"
-      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-    - name: "Store"
-      icon: "/images/oop.svg"
-      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+      content: ""
+    # - name: "Store"
+    #   icon: "/images/oop.svg"
+    #   content: ""
     - name: "Community"
       icon: "/images/user-clock.svg"
-      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+      content: ""
     - name: "Social"
       icon: "/images/love.svg"
-      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+      content: ""
     - name: "Podcasts"
       icon: "/images/speedometer.svg"
-      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+      content: ""
     - name: "Talks"
       icon: "/images/cloud.svg"
-      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+      content: ""
 
 # services
 services:
-  - title: "What is islam?"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Printables"
+    content: "പ്രിന്റ് എടുക്കാവുന്ന ദുആകൾ ഇനി ഇവിടെ നിന്ന് ഡൌൺലോഡ് ചെയ്യാം ."
     images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
+      - "https://i.postimg.cc/0NZ4YWSb/travel-dua.png"
+      # - "/images/service-slide-2.png"
+      # - "/images/service-slide-3.png"
     button:
       enable: true
       label: Learn more
-      link: /blog/blog-4
+      link: /printable
 
   - title: "How are we helping people?"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+    content: "ഇസ്ലാമിന്റെ സന്ദേശം ജനങ്ങളിലേക്ക് എത്തിക്കുക എന്ന ലക്ഷ്യത്തിൽ പ്രവർത്തിക്കുന്ന കൂട്ടായ്മയാണ് ആയത്ത് . വ്യത്യസ്‍ത എഴുത്തുകളും ഇസ്ലാമിക ചിന്തകളെയും നിങ്ങൾക്ക് ഇവിടെ പരിചയപ്പെടാം. ഇസ്ലാമിക സ്റ്റോർ , മൊബൈൽ ആപ്പുകൾ , ന്യൂസ് പോർട്ടൽ എന്നിവ ആയത്ത് നിർമിക്കുകയും പ്രചരിപ്പിക്കുകയും ചെയ്യുന്നു ."
     images:
-      - "/images/service-slide-1.png"
+      - "https://images.pexels.com/photos/2233416/pexels-photo-2233416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     button:
       enable: true
       label: Check it out
       link: /contact
 
-  - title: "How can you help?"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-    images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
-    button:
-      enable: true
-      label: Check it out
-      link: /contact
+  # - title: "How can you help?"
+  #   content: "ഞങ്ങൾക്ക് വേണ്ടി പ്രാർത്ഥിക്കുക . ഈ പ്രവർത്തനത്തെ ജനങ്ങളിലേക്ക് എത്തിക്കുക ."
+  #   images:
+  #     - "/images/service-slide-1.png"
+  #     - "/images/service-slide-2.png"
+  #     - "/images/service-slide-3.png"
+  #   button:
+  #     enable: true
+  #     label: Check it out
+  #     link: /contact
 
   - title: "Free Quran program"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+    content: "ജനങ്ങൾക്ക് ഫ്രീ ആയി ഖുർആൻ എത്തിക്കാൻ ഉള്ള സംരംഭം ആണിത് . താഴെ ഉള്ള ഫോം വഴി ബുക്ക് ചെയ്യാം.നിങ്ങൾക്ക് സ്പോൺസർ ചെയ്യാൻ താല്പര്യം ഉണ്ടെങ്കിൽ ഇവിടെ അറിയിക്കാം."
     images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
+      - "https://images.pexels.com/photos/36704/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     button:
       enable: true
       label: Check it out
-      link: /contact
+      link: /free-quran-project
 
 # workflow
 workflow:

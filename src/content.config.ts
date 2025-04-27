@@ -193,6 +193,48 @@ const pricingCollection = defineCollection({
   }),
 });
 
+//pricing collection schema
+const printableNewCollection = defineCollection({
+  loader: glob({ pattern: "**/-*.{md,mdx}", base: "src/content/printable" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    draft: z.boolean(),
+    printables: z
+      .array(
+        z.object({
+          title: z.string(),
+          subtitle: z.string().optional(),
+          url: z.string(),
+          thumbnail: z.string(),
+          type: z.string(),
+          recommended: z.boolean().optional(),
+          notes: z.array(z.string()),
+          button: z.object({
+            label: z.string().default("Download"),
+            link: z.string().default("/"),
+          }),
+        }),
+      )
+      .optional(),
+
+    call_to_action: z
+      .object({
+        title: z.string(),
+        content: z.string(),
+        image: z.string(),
+        button: z
+          .object({
+            enable: z.boolean().default(true),
+            label: z.string(),
+            link: z.string().default("/contact"),
+          })
+          .optional(),
+      })
+      .optional(),
+  }),
+});
+
 // FAQ collection schema
 const faqCollection = defineCollection({
   loader: glob({ pattern: "**/-*.{md,mdx}", base: "src/content/faq" }),
@@ -240,6 +282,24 @@ const newsCollection = defineCollection({
     tags: z.array(z.string()).default(["others"]),
     draft: z.boolean().optional(),
     post_type: z.string().default("news"),
+  }),
+});
+
+
+// Printables collection schema
+const printablesCollection = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/printables" }),
+  schema: z.object({
+    title: z.string(),
+    meta_title: z.string().optional(),
+    description: z.string().optional(),
+    date: z.date().optional(),
+    image: z.string().optional(),
+    authors: z.array(z.string()).default(["admin"]),
+    categories: z.array(z.string()).default(["others"]),
+    tags: z.array(z.string()).default(["others"]),
+    draft: z.boolean().optional(),
+    post_type: z.string().default("printables"),
   }),
 });
 
@@ -540,6 +600,27 @@ const websitesCollection = defineCollection({
   }),
 });
 
+// FAQ collection schema
+const fqprojectCollection = defineCollection({
+  loader: glob({ pattern: "**/-*.{md,mdx}", base: "src/content/free-quran-project" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    draft: z.boolean(),
+    fqproject: z.array(
+      z.object({
+        title: z.string(),
+        answer: z.string(),
+      }),
+    ),
+    info: z.object({
+      title: z.string(),
+      description: z.string(),
+      contacts: z.array(z.string()),
+    }),
+  }),
+});
+
 // Export collections
 export const collections = {
   homepage: homepageCollection,
@@ -555,4 +636,7 @@ export const collections = {
   news: newsCollection,
   apps: appsCollection,
   websites: websitesCollection,
+  "fqproject": fqprojectCollection,
+  printables: printablesCollection, //old printables collection
+  printable: printableNewCollection
 };

@@ -10,11 +10,11 @@ import { Debug } from "astro:components";
 import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
 const integrationsIndex = (await getEntry(
-  "integrations",
+  "websites",
   "-index"
-)) as CollectionEntry<"integrations">;
-const categories = await getTaxonomy("integrations", "categories");
-const integrations = await getSinglePage("integrations");
+)) as CollectionEntry<"websites">;
+const categories = await getTaxonomy("websites", "categories");
+const integrations = await getSinglePage("websites");
 const page_data = {
   ...integrationsIndex.data,
   content: integrationsIndex.body,

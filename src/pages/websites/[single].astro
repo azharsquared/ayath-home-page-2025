@@ -9,12 +9,12 @@ import { Debug } from "astro:components";
 import type { CollectionEntry } from "astro:content";
 import { getEntry, render } from "astro:content";
 const integrationsIndex = (await getEntry(
-  "integrations",
+  "websites",
   "-index"
-)) as CollectionEntry<"integrations">;
+)) as CollectionEntry<"websites">;
 
 export async function getStaticPaths() {
-  const integrations = await getSinglePage("integrations");
+  const integrations = await getSinglePage("websites");
   const paths = integrations.map((post) => ({
     params: {
       single: post.id,

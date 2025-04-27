@@ -1,12 +1,11 @@
 ---
 title: "Contact Us"
-description: "meta description"
+description: "connect with ayath.org"
 draft: false
 info:
-  title: Why you should contact us!
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit recusandae voluptates doloremque veniam temporibus porro culpa ipsa, nisi soluta minima saepe laboriosam debitis nesciunt.
+  title: We need your suggestions!
+  description: Send your suggestions to us via below channels.
   contacts:
-    - "phone: +88 125 256 452"
-    - "Mail: [info@bigspring.com](mailto:info@bigspring.com)"
-    - "Address: 360 Main rd, Rio, Brazil"
+    - "phone: +91"
+    - "Mail: [info@ayath.org](mailto:info@ayath.org)"
 ---

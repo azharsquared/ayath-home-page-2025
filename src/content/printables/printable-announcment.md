@@ -1,0 +1,13 @@
+---
+title: "Ayath printables"
+description: "Announcement of ayath printables"
+image: "/images/blog-4.jpg"
+date: 2022-08-04T05:00:00Z
+draft: false
+---
+
+പ്രിന്റ് എടുക്കാവുന്ന ദുആകൾ ഇനി ഇവിടെ നിന്ന് ഡൌൺലോഡ് ചെയ്യാം .
+
+[travel-dua.png](https://postimg.cc/06MZxCcs)
+
+[ayath printables](/printables)

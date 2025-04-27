@@ -40,32 +40,7 @@
       "menu": [
         {
           "text": "Features",
-          "url": "#"
-        },
-        {
-          "text": "Platform",
-          "url": "#"
-        },
-        {
-          "text": "Pricing",
-          "url": "/pricing"
-        }
-      ]
-    },
-    {
-      "name": "Support",
-      "menu": [
-        {
-          "text": "FAQ",
-          "url": "/faq"
-        },
-        {
-          "text": "Privacy Policy",
-          "url": "/privacy-policy"
-        },
-        {
-          "text": "Terms & Conditions",
-          "url": "/terms-conditions"
+          "url": "apps"
         }
       ]
     }
