@@ -265,6 +265,7 @@ const blogCollection = defineCollection({
     tags: z.array(z.string()).default(["others"]),
     draft: z.boolean().optional(),
     post_type: z.string().default("blog"),
+    weight: z.number().optional(), // Optional weight for sorting
   }),
 });
 
@@ -282,6 +283,7 @@ const newsCollection = defineCollection({
     tags: z.array(z.string()).default(["others"]),
     draft: z.boolean().optional(),
     post_type: z.string().default("news"),
+    weight: z.number().optional(), // Optional weight for sorting
   }),
 });
 
@@ -484,56 +486,56 @@ const howItWorksCollection = defineCollection({
 });
 
 // Careers collection schema
-const careersCollection = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/careers" }),
-  schema: z.object({
-    title: z.string(),
-    meta_title: z.string().optional(),
-    description: z.string().optional(),
-    page_title: z.string().optional(),
-    image: z.string().optional(),
-    benefits: z
-      .object({
-        title: z.string(),
-        description: z.string(),
-        benefit_list: z.array(
-          z
-            .object({
-              title: z.string(),
-              content: z.string(),
-              color: z.string(),
-              icon: z.string(),
-            })
-            .optional(),
-        ),
-      })
-      .optional(),
-    sidebar_content: z
-      .object({
-        title: z.string(),
-        content: z.string(),
-        button: z.object({
-          label: z.string(),
-          link: z.string(),
-          enable: z.boolean().default(true),
-        }),
-        enable: z.boolean().default(true),
-      })
-      .optional(),
-    career: z
-      .object({
-        title: z.string(),
-        subtitle: z.string(),
-      })
-      .optional(),
-    excerpt: z.string().optional(),
-    job_nature: z.string().optional(),
-    location: z.string().optional(),
-    categories: z.array(z.string()).default(["developer"]),
-    date: z.date().optional(),
-    draft: z.boolean().default(false),
-  }),
-});
+// const careersCollection = defineCollection({
+//   loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/careers" }),
+//   schema: z.object({
+//     title: z.string(),
+//     meta_title: z.string().optional(),
+//     description: z.string().optional(),
+//     page_title: z.string().optional(),
+//     image: z.string().optional(),
+//     benefits: z
+//       .object({
+//         title: z.string(),
+//         description: z.string(),
+//         benefit_list: z.array(
+//           z
+//             .object({
+//               title: z.string(),
+//               content: z.string(),
+//               color: z.string(),
+//               icon: z.string(),
+//             })
+//             .optional(),
+//         ),
+//       })
+//       .optional(),
+//     sidebar_content: z
+//       .object({
+//         title: z.string(),
+//         content: z.string(),
+//         button: z.object({
+//           label: z.string(),
+//           link: z.string(),
+//           enable: z.boolean().default(true),
+//         }),
+//         enable: z.boolean().default(true),
+//       })
+//       .optional(),
+//     career: z
+//       .object({
+//         title: z.string(),
+//         subtitle: z.string(),
+//       })
+//       .optional(),
+//     excerpt: z.string().optional(),
+//     job_nature: z.string().optional(),
+//     location: z.string().optional(),
+//     categories: z.array(z.string()).default(["developer"]),
+//     date: z.date().optional(),
+//     draft: z.boolean().default(false),
+//   }),
+// });
 
 const integrationsCollection = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/integrations" }),
@@ -621,22 +623,45 @@ const fqprojectCollection = defineCollection({
   }),
 });
 
+// Author collection schema
+const authorsCollection = defineCollection({
+  // loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/authors" }),
+  schema: z.object({
+    id: z.string().optional(),
+    title: z.string(),
+    meta_title: z.string().optional(),
+    image: z.string().optional(),
+    description: z.string().optional(),
+    social: z
+      .object({
+        facebook: z.string().optional(),
+        twitter: z.string().optional(),
+        instagram: z.string().optional(),
+      })
+      .optional(),
+    draft: z.boolean().optional(),
+  }),
+});
+
 // Export collections
 export const collections = {
   homepage: homepageCollection,
   blog: blogCollection,
   pages: pagesCollection,
   contact: contactCollection,
-  pricing: pricingCollection,
-  faq: faqCollection,
+   pricing: pricingCollection,
+   faq: faqCollection,
   features: featuresCollection,
   "how-it-works": howItWorksCollection,
-  careers: careersCollection,
+  // careers: careersCollection,
   integrations: integrationsCollection,
   news: newsCollection,
   apps: appsCollection,
   websites: websitesCollection,
   "fqproject": fqprojectCollection,
+  
   printables: printablesCollection, //old printables collection
-  printable: printableNewCollection
+  printable: printableNewCollection,
+  dfi: pricingCollection,
+  authors: authorsCollection,
 };

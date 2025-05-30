@@ -3,7 +3,7 @@ import Pagination from "@/components/Pagination.astro";
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
-import { sortByDate } from "@/lib/utils/sortFunctions";
+import { sortByDate, sortWithWeight } from "@/lib/utils/sortFunctions";
 import { markdownify } from "@/lib/utils/textConverter";
 import Post from "@/partials/NewsPost.astro";
 import type { CollectionEntry } from "astro:content";
@@ -27,7 +27,7 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 const postIndex = (await getEntry("news", "-index")) as CollectionEntry<"news">;
 const posts = await getSinglePage("news");
-const sortedPosts = sortByDate(posts);
+const sortedPosts = sortWithWeight(posts);
 const totalPages = Math.ceil(posts.length / config.settings.pagination);
 const currentPage = slug && !isNaN(Number(slug)) ? Number(slug) : 1;
 const indexOfLastPost = currentPage * config.settings.pagination;

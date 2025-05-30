@@ -50,4 +50,9 @@ export default defineConfig({
     },
     extendDefaultPlugins: true,
   },
+  exclude: [
+    '**/careers/**', // Exclude this specific file
+    '**/drafts/**',          // Exclude all files in a "drafts" folder
+    '**/*.test.*',           // Exclude test files
+  ],
 });

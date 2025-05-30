@@ -1,4 +1,4 @@
 ---
-title: "Latest news"
-description: "this is meta description"
+title: "എഴുത്തുകൾ"
+description: "ഇസ്ലാമിക പഠനങ്ങളും ചിന്തകളും"
 ---

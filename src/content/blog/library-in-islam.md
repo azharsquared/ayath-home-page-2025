@@ -4,6 +4,8 @@ description: "Understanding the importance of libraries in Islam and their role 
 image: "/images/blog-4.jpg"
 date: 2025-04-20T05:00:00Z
 draft: false
+authors: ["Azhar"]
+categories: ["generic"]
 ---
 
 ഇസ്ലാമിക നാഗരികതയിൽ ഗ്രന്ഥശാലകൾ എല്ലായ്‌പ്പോഴും അറിവിന്റെയും പഠനത്തിന്റെയും ഒരു മൂലക്കല്ലായിരുന്നു. ഇസ്ലാമിന്റെ ആദ്യകാലം മുതൽ, അറിവ് തേടൽ ഒരു അടിസ്ഥാന തത്വമായിരുന്നു, അത് ഖുർആനിന്റെയും പ്രവാചകൻ മുഹമ്മദ് നബി (സ) യുടെ സുന്നത്തിന്റെയും അധ്യാപനങ്ങളിൽ ആഴത്തിൽ വേരൂന്നിയതാണ്.

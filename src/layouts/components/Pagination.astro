@@ -1,4 +1,6 @@
 ---
+import { Debug } from "astro:components";
+
 const { section, currentPage, totalPages } = Astro.props;
 
 const indexPageLink = currentPage === 2;
@@ -10,6 +12,7 @@ for (let i = 1; i <= totalPages; i++) {
   pageList.push(i);
 }
 ---
+<Debug section={section} currentPage={currentPage} totalPages={totalPages} />
 
 {
   totalPages > 1 && (

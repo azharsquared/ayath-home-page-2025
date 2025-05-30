@@ -70,7 +70,7 @@ const WebsitesMedia = ({ integrations, categories }) => {
                   className="group inline-flex items-center font-semibold text-dark hover:text-primary"
                   href={`/websites/${item.id}`}
                 >
-                  View integration
+                  Our review
                   <AiOutlineArrowRight className="ml-1.5 text-xl font-bold duration-300 group-hover:ml-3" />
                 </a>
               </div>

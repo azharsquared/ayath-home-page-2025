@@ -1,4 +1,4 @@
 ---
-title: "Latest news"
-description: "this is meta description"
+title: "വാർത്തകൾ"
+description: "ഇസ്ലാമിക ലോകത്തെ വാർത്തകൾ വായിക്കാം "
 ---

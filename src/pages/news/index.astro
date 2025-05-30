@@ -4,20 +4,21 @@ import Base from "@/layouts/Base.astro";
 import Pagination from "@/layouts/components/Pagination.astro";
 import Post from "@/layouts/partials/Post.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
-import { sortByDate } from "@/lib/utils/sortFunctions";
+import { sortByDate,sortWithWeight } from "@/lib/utils/sortFunctions";
 import { markdownify, plainify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
+import { Debug } from "astro:components";
 import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
 
 const { summary_length } = config.settings;
 const postIndex = (await getEntry("news", "-index")) as CollectionEntry<"news">;
 const posts = await getSinglePage("news");
-const sortedPosts = sortByDate(posts);
+const sortedPosts = sortWithWeight(posts);
 const totalPages = Math.ceil(posts.length / config.settings.pagination);
 const currentPosts = sortedPosts.slice(0, config.settings.pagination);
 ---
-
+<Debug category={sortedPosts} item={posts} />
 <Base title={postIndex?.data.title}>
   <section class="section">
     <div class="container">

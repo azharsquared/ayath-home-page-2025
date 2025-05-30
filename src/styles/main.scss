@@ -11,6 +11,22 @@
   @include meta.load-css("components");
   @include meta.load-css("navigation");
   @include meta.load-css("buttons");
+
+    /* Language Switcher Styles */
+    .language-switcher select {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 0.5rem;
+      font-size: 1rem;
+      background-color: #fff;
+      color: #333;
+      cursor: pointer;
+    }
+  
+    .language-switcher select:focus {
+      outline: none;
+      border-color: #0aa815; /* Match your theme's primary color */
+    }
 }
 
 @layer utilities {
